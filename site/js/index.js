@@ -21,6 +21,12 @@ function logar(event){
         //alert('LOGIN OK');
         //location.href = './html/home.html';
     }else{
+        Swal.fire({
+            title:'Erro!',
+            text: 'Usuário ou senha incorretos.',
+            icon: 'error',
+            confirmButtonText: 'Tentar novamente'
+        })
         //alert('ERRO usuário ou senha incorretos');
     }
 
